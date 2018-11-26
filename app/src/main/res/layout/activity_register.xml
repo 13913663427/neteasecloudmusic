@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,InOrMmUsage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200mm"
+        android:background="#cf00">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60mm"
+            android:layout_marginTop="80mm"
+            android:drawableStart="@mipmap/icon_arrow"
+            android:text="   手机号注册"
+            android:textColor="#fff"
+            android:textSize="62sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58mm"
+        android:layout_marginStart="58mm"
+        android:layout_marginTop="174mm"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_phone"
+            android:text="   +86 "
+            android:textSize="52sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:textSize="52sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58mm"
+        android:layout_marginStart="58mm"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4mm"
+            android:layout_marginTop="36mm"
+            android:background="#999"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_lock"
+            android:layout_marginTop="108mm"
+            android:background="@null"
+            android:hint="   设置登录密码，不少于6位"
+            android:inputType="number"
+            android:textSize="52sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4mm"
+            android:layout_marginTop="36mm"
+            android:background="#999"/>
+
+        <Button
+            android:layout_marginTop="110mm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="56sp"
+            android:text="下一步"
+            android:textColor="#fff"
+            android:background="@drawable/btn_register"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
