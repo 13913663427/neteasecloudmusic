@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      tools:ignore="HardcodedText">
+
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@mipmap/icon_setting"
+        android:title="设置"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/more"
+        android:icon="@mipmap/icon_more"
+        android:title="更多"
+        app:showAsAction="never"/>
+
+
+
+</menu>

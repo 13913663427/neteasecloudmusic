@@ -7,21 +7,9 @@
               android:orientation="vertical"
               tools:ignore="HardcodedText,InOrMmUsage">
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="200mm"-->
-        <!--android:background="#cf00">-->
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginStart="60mm"-->
-            <!--android:layout_marginTop="80mm"-->
-            <!--android:text="   手机号注册"-->
-            <!--android:textColor="#fff"-->
-            <!--android:textSize="62sp"/>-->
-    <!--</LinearLayout>-->
-
+   
+    <!--顶部标题栏，Toolbar功能更强大-->
+    <!--第一个theme指定主题是dark风格：暗底白字，第二个popupTheme指定主题点出来的是light风格：白底暗字-->
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -30,8 +18,8 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <LinearLayout
 
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="58mm"
