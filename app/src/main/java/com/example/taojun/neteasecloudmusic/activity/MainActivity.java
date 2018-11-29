@@ -44,7 +44,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     protected void initListener() {
         findViewById(R.id.btn_register).setOnClickListener(this);
-        findViewById(R.id.btn_login).setOnClickListener(this);
+        findViewById(R.id.btn_login).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     @Override

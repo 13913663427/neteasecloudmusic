@@ -28,4 +28,5 @@ dependencies {
     implementation 'me.jessyan:autosize:1.0.6'//适配
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'//网络请求
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'// retrofit2打印日志
 }
