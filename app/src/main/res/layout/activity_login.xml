@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@mipmap/bg_login"/>
+        android:src="@mipmap/bg_login2"/>
 
 
     <LinearLayout
@@ -17,8 +17,8 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="316mm"
+            android:layout_height="315mm"
             android:layout_marginStart="562mm"
             android:layout_marginTop="300mm"
             android:src="@mipmap/icon_music"/>
@@ -31,7 +31,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_login"
+                android:id="@+id/btn_phone_init"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="268mm"
@@ -42,13 +42,13 @@
                 android:textSize="54sp"/>
 
             <Button
-                android:id="@+id/btn_register"
+                android:id="@+id/btn_mail_init"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="58mm"
                 android:background="@drawable/btn_login"
                 android:padding="20mm"
-                android:text="注册"
+                android:text="邮箱登录"
                 android:textColor="#f00"
                 android:textSize="54sp"/>
 

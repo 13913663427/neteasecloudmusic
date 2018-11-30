@@ -9,8 +9,8 @@ import java.io.IOException;
 
 public class Test {
     private static final String regex = ".+(.JPEG|.jpeg|.JPG|.jpg|.png)$";//正则表达式 用来判读是否是图片格式的文件
-    private static final String srcPath = "C:\\Users\\TJ\\Desktop\\CloudMusic_official_5.7.0.700040"; // 需要查找的文件夹
-    private static final String targetPath = "C:\\Users\\TJ\\Desktop\\images"; // 存放的目标文件夹
+    private static final String srcPath = "C:\\Users\\Taojun\\Desktop\\58FB9E35433D969AC8D1B85FE45B7D0A"; // 需要查找的文件夹
+    private static final String targetPath = "C:\\Users\\Taojun\\Desktop\\icon"; // 存放的目标文件夹
 
 
     public static void main(String[] args) throws IOException {

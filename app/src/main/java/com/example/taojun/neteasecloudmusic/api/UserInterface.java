@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 
 public interface UserInterface {
     @GET("login/cellphone")
-    Call<UserItem> getUsers(@Query("phone") String phone, @Query("password") String password);
+    Call<UserItem> getUsers(@Query("phone") String phone, @Query("password") String phonePassword);
 
 
 }

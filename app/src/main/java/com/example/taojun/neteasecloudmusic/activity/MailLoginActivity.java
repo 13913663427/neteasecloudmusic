@@ -1,38 +1,37 @@
 package com.example.taojun.neteasecloudmusic.activity;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.example.taojun.neteasecloudmusic.R;
 
-public class RegisterActivity extends BaseActivity {
+public class MailLoginActivity extends BaseActivity {
 
     private Toolbar toolbar;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setSupportActionBar(toolbar);
-
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);// 让左侧的图标显示出来
-//            actionBar.setHomeAsUpIndicator(R.mipmap.icon_arrow);// 设置左侧的图标,默认为一个向左的箭头
         }
     }
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_register;
+        return R.layout.activity_mail_login;
     }
 
     @Override
     protected void initView() {
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar2);
+
     }
 
     @Override
@@ -45,12 +44,10 @@ public class RegisterActivity extends BaseActivity {
 
     }
 
-
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // 处理各个按钮的点击事件
-        switch (item.getItemId()) {
-            case android.R.id.home:// 标题栏左侧按钮默认id
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case android.R.id.home:
                 finish();
                 break;
         }

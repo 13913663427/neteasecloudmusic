@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               tools:ignore="HardcodedText,InOrMmUsage">
 
-   
+
     <!--顶部标题栏，Toolbar功能更强大-->
     <!--第一个theme指定主题是dark风格：暗底白字，第二个popupTheme指定主题点出来的是light风格：白底暗字-->
     <android.support.v7.widget.Toolbar
@@ -32,9 +32,11 @@
             android:layout_height="wrap_content"
             android:drawableStart="@mipmap/icon_phone"
             android:text="   +86 "
+            android:textColor="#000"
             android:textSize="52sp"/>
 
         <EditText
+            android:id="@+id/et_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@null"
@@ -57,15 +59,40 @@
             android:layout_marginTop="36mm"
             android:background="#999"/>
 
-        <EditText
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="108mm"
-            android:background="@null"
-            android:drawableLeft="@mipmap/icon_lock"
-            android:hint="   设置登录密码，不少于6位"
-            android:inputType="number"
-            android:textSize="52sp"/>
+            android:layout_height="match_parent"
+            android:layout_marginTop="108mm">
+
+            <TextView
+                android:id="@+id/tv_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_lock"
+                android:text="   "
+                android:textSize="52sp"/>
+
+            <EditText
+                android:id="@+id/et_phone_password"
+                android:layout_width="700mm"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_lock"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:hint="请输入密码"
+                android:textSize="52sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/et_phone_password"
+                android:layout_alignParentEnd="true"
+                android:text="忘记密码？"
+                android:textColor="#65829F"
+                android:textSize="38sp"/>
+
+
+        </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
@@ -74,12 +101,13 @@
             android:background="#999"/>
 
         <Button
+            android:id="@+id/btn_phone_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="110mm"
             android:background="@drawable/btn_register"
-            android:padding="20mm"
-            android:text="下一步"
+            android:padding="42mm"
+            android:text="登陆"
             android:textColor="#fff"
             android:textSize="56sp"/>
 

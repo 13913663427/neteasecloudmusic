@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,InOrMmUsage">
+
+
+    <!--顶部标题栏，Toolbar功能更强大-->
+    <!--第一个theme指定主题是dark风格：暗底白字，第二个popupTheme指定主题点出来的是light风格：白底暗字-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#cf00"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58mm"
+        android:layout_marginStart="58mm"
+        android:layout_marginTop="174mm"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_phone"
+            android:text="   "
+            android:textColor="#000"
+            android:textSize="52sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入邮箱账号"
+            android:textSize="52sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58mm"
+        android:layout_marginStart="58mm"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4mm"
+            android:layout_marginTop="36mm"
+            android:background="#999"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="108mm">
+
+            <TextView
+                android:id="@+id/tv_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_lock"
+                android:text="   "
+                android:textSize="52sp"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="700mm"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_lock"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:textSize="52sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/et_password"
+                android:layout_alignParentEnd="true"
+                android:text="忘记密码？"
+                android:textColor="#65829F"
+                android:textSize="38sp"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4mm"
+            android:layout_marginTop="36mm"
+            android:background="#999"/>
+
+        <Button
+            android:id="@+id/btn_mail_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110mm"
+            android:background="@drawable/btn_register"
+            android:padding="42mm"
+            android:text="登陆"
+            android:textColor="#fff"
+            android:textSize="56sp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
